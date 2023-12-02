@@ -95,10 +95,21 @@ _G.packer_plugins = {
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["fine-cmdline.nvim"] = {
+    loaded = true,
+    path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/fine-cmdline.nvim",
+    url = "https://github.com/VonHeikemen/fine-cmdline.nvim"
+  },
   ["git-blame.nvim"] = {
     loaded = true,
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
     url = "https://github.com/f-person/git-blame.nvim"
+  },
+  ["github-nvim-theme"] = {
+    config = { "\27LJ\2\nn\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\nsetup\17github-theme\frequire\0" },
+    loaded = true,
+    path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   harpoon = {
     loaded = true,
@@ -131,6 +142,11 @@ _G.packer_plugins = {
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -161,11 +177,6 @@ _G.packer_plugins = {
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["palenight.vim"] = {
-    loaded = true,
-    path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/palenight.vim",
-    url = "https://github.com/drewtempelmeyer/palenight.vim"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -187,6 +198,21 @@ _G.packer_plugins = {
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-dadbod-completion"] = {
+    loaded = true,
+    path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/vim-dadbod-completion",
+    url = "https://github.com/kristijanhusak/vim-dadbod-completion"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui",
+    url = "https://github.com/kristijanhusak/vim-dadbod-ui"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/igor.pieruccinisosafe.de/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -205,10 +231,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\17hide_numbers\2\17open_mapping\n<c-t>\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
@@ -217,6 +239,14 @@ time([[Config for toggleterm.nvim]], false)
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
+-- Config for: github-nvim-theme
+time([[Config for github-nvim-theme]], true)
+try_loadstring("\27LJ\2\nn\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+time([[Config for github-nvim-theme]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
