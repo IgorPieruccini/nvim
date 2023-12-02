@@ -25,3 +25,6 @@ vim.keymap.set("n", "<leader>ct", "<cmd>:tabclose<cr>")
 
 vim.keymap.set("n", "<C-j>", "+10");
 vim.keymap.set("n", "<C-k>", "-10");
+
+vim.keymap.set("n", "<C-l>", "<cmd>:bprevious<cr>");
+vim.keymap.set("n", "<C-ö>", "<cmd>:bNext<cr>");
