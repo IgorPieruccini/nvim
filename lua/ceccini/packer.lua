@@ -26,27 +26,6 @@ return require('packer').startup(
       end
     })
 
-    -- use({
-    --   "folke/tokyonight.nvim",
-    --   lazy = false,
-    --   priority = 1000,
-    --   opts = {},
-    --   config = function()
-    --     require("tokyonight").setup({
-    --       style = 'storm',
-    --       styles = {
-    --         -- Style to be applied to different syntax groups
-    --         -- Value is any valid attr-list value for `:help nvim_set_hl`
-    --         comments = { italic = true },
-    --         keywords = { italic = true },
-    --         -- Background styles. Can be "dark", "transparent" or "normal"
-    --         sidebars = "dark", -- style for sidebars, see below
-    --         floats = "dark",   -- style for floating windows
-    --       },
-    --     })
-    --   end
-    -- })
-
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
     use('ThePrimeagen/harpoon')
@@ -77,6 +56,7 @@ return require('packer').startup(
       }
     }
 
+    use "saadparwaiz1/cmp_luasnip"
 
     use {
       "nvim-neo-tree/neo-tree.nvim",
