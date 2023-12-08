@@ -10,12 +10,21 @@ local f = ls.function_node
 local d = ls.dynamic_node
 local sn = ls.snippet_node
 
+local function capitalizeFirstLetter(args)
+  local input = args[1][1]
+  local capitalized = "set" .. input:sub(1, 1):upper() .. input:sub(2)
+  return capitalized
+end
+
 local useState = s(
-  "s:useState", fmt(
+  "s:useState",
+  fmt(
     [[
-    const [{}, set{}] = useState();
-    ]], {
-      i(1), rep(1)
+  const [{}, {}] = useState();
+  ]],
+    {
+      i(1),
+      f(capitalizeFirstLetter, 1),
     }
   ));
 
