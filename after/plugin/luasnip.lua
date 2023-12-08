@@ -25,18 +25,22 @@ end, { silent = true })
 local log_snippet = require("ceccini.snippets.log")
 local func_snippet = require("ceccini.snippets.func")
 local use_state_snippet = require("ceccini.snippets.useState")
+local use_effect_snippet = require("ceccini.snippets.useEffect")
 
 local common_snipets = {
   log_snippet.objectLog,
   log_snippet.simpleLog,
   func_snippet.simpleFunction,
+  func_snippet.withReturn
 }
 
 local react_snippets = {
   log_snippet.objectLog,
   log_snippet.simpleLog,
   func_snippet.simpleFunction,
-  use_state_snippet.useState
+  func_snippet.withReturn,
+  use_state_snippet.useState,
+  use_effect_snippet.useEffect
 }
 
 ls.add_snippets("javascript", common_snipets);

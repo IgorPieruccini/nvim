@@ -10,30 +10,18 @@ local f = ls.function_node
 local d = ls.dynamic_node
 local sn = ls.snippet_node
 
-local simpleFunction = s("s:func", fmt(
-  [[
-      const {} = ({})=> {{
+local useEffect = s(
+  "s:useEffect",
+  fmt(
+    [[
+    useEffect(()=> {{
 
-     }}
-    ]],
-  {
-    i(1), i(2)
-  }
-))
+    }},[]);
 
-local withReturn = s("s:func", fmt(
-  [[
-      const {} = ({})=> {{
-          return {}
-     }}
-    ]],
-  {
-    i(1), i(2), i(3)
-  }
-))
-
+    ]], {}
+  )
+);
 
 return {
-  simpleFunction = simpleFunction,
-  withReturn = withReturn
+  useEffect = useEffect
 }
