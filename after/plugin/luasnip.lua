@@ -26,12 +26,16 @@ local log_snippet = require("ceccini.snippets.log")
 local func_snippet = require("ceccini.snippets.func")
 local use_state_snippet = require("ceccini.snippets.useState")
 local use_effect_snippet = require("ceccini.snippets.useEffect")
+local jest = require("ceccini.snippets.jest")
 
 local common_snipets = {
   log_snippet.objectLog,
   log_snippet.simpleLog,
   func_snippet.simpleFunction,
-  func_snippet.withReturn
+  func_snippet.withReturn,
+  jest.describe,
+  jest.it,
+  jest.itAsync,
 }
 
 local react_snippets = {
@@ -39,6 +43,9 @@ local react_snippets = {
   log_snippet.simpleLog,
   func_snippet.simpleFunction,
   func_snippet.withReturn,
+  jest.describe,
+  jest.it,
+  jest.itAsync,
   use_state_snippet.useState,
   use_effect_snippet.useEffect
 }
