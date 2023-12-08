@@ -13,22 +13,21 @@ local sn = ls.snippet_node
 local simpleLog = s(
   "s:log", fmt(
     [[
-    console.log({{{}}})
+    console.log({{{}}});
     ]],
     i(1)
   ));
 
 local objectLog = s("s:log", fmt(
   [[
-    console.log("{}", {})
+    console.log("{}", {});
   ]],
   {
     rep(1), i(1)
   }
 ))
 
-
 return {
   simpleLog = simpleLog,
-  objectLog = objectLog
+  objectLog = objectLog,
 };

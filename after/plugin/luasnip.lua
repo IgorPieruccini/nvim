@@ -40,3 +40,12 @@ ls.add_snippets("javascriptreact", react_snippets);
 ls.add_snippets("typescript", common_snipets);
 
 ls.add_snippets("typescriptreact", react_snippets);
+
+
+vim.keymap.set("v", "<C-l>", function()
+  local line_number = vim.fn.line(".")
+  local selected_file = vim.fn.expand('<cfile>');
+  vim.cmd("normal! $")
+  vim.cmd("normal! o")
+  vim.fn.append(line_number, "console.log(" .. selected_file .. ");");
+end)
