@@ -7,7 +7,7 @@ return require('packer').startup(
     use 'wbthomason/packer.nvim'
 
     use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      'nvim-telescope/telescope.nvim', tag = '0.1.4',
       -- or                            , branch = '0.1.x',
       requires = { { 'nvim-lua/plenary.nvim' } }
     }
@@ -84,8 +84,6 @@ return require('packer').startup(
       end
     }
 
-    use 'airblade/vim-gitgutter'
-
     use {
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true },
@@ -110,4 +108,6 @@ return require('packer').startup(
         { 'MunifTanjim/nui.nvim' }
       }
     }
+
+    use "rebelot/kanagawa.nvim"
   end)

@@ -1,5 +1,0 @@
-vim.keymap.set("n", "<C-a.>", '<cmd>GitGutterNextHunk<cr>')
-vim.keymap.set("n", "<C-a,>", '<cmd>GitGutterPrevHunk<cr>')
-vim.keymap.set("n", "<C-ap>", '<cmd>GitGutterPreview<cr>')
-vim.keymap.set("n", "<C-au>", '<cmd>GitGutterUndoHunk<cr>')
-vim.keymap.set("n", "<C-as>", '<cmd>GitGutterStaGeHunk<cr>')
