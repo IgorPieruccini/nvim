@@ -110,4 +110,6 @@ return require('packer').startup(
     }
 
     use "rebelot/kanagawa.nvim"
+    use "tpope/vim-surround"
+    use { 'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons' }
   end)
