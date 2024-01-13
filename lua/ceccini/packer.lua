@@ -119,4 +119,5 @@ return require('packer').startup(
         require('treesj').setup({ --[[ your config ]] })
       end,
     })
+    use "folke/flash.nvim"
   end)
