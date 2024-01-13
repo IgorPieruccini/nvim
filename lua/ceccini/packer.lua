@@ -112,4 +112,11 @@ return require('packer').startup(
     use "rebelot/kanagawa.nvim"
     use "tpope/vim-surround"
     use { 'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons' }
+    use({
+      'Wansmer/treesj',
+      requires = { 'nvim-treesitter/nvim-treesitter' },
+      config = function()
+        require('treesj').setup({ --[[ your config ]] })
+      end,
+    })
   end)
