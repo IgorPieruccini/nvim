@@ -15,8 +15,6 @@ lsp.ensure_installed({
   'jsonls'
 })
 
--- lsp.format_on_save()
-
 lsp.on_attach(function(client, bufnr)
   local opts = { buffer = bufnr, remap = false }
 
@@ -40,20 +38,23 @@ lsp.set_sign_icons({
 
 lsp.setup()
 
-
 local cmp = require('cmp')
+local cmp_action = require('lsp-zero').cmp_action()
+local cmp_format = require('lsp-zero').cmp_format()
+require('luasnip.loaders.from_vscode').lazy_load()
+
 cmp.setup({
-  mapping = {
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['<C-f>'] = cmp_action.luasnip_jump_forward(),
+    ['<C-b>'] = cmp_action.luasnip_jump_backward(),
     ['<CR>'] = cmp.mapping.confirm({ select = false }),
-  },
-  snippet = {
-    expand = function(args)
-      require('luasnip').lsp_expand(args.body)
-    end,
-  },
-  source = cmp.config.sources({
-    { name = 'luasnip' }
-  })
+  }),
+  --- (Optional) Show source name in completion menu
+  formatting = cmp_format,
 })
 
--- default keybinds documentation: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v2.x/doc/md/lsp.md#enable-format-on-save
+--default keybinds documentation: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v2.x/doc/md/lsp.md#enable-format-on-save
