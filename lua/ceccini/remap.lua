@@ -20,8 +20,10 @@ vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
-vim.keymap.set("n", "<leader>nt", "<cmd>:tabnew<cr>")
-vim.keymap.set("n", "<leader>ct", "<cmd>:tabclose<cr>")
+vim.keymap.set("n", "<C-y>", "<cmd>:tabnew<cr>")
+vim.keymap.set("n", "<C-x>", "<cmd>:tabclose<cr>")
+vim.keymap.set("n", "<C-m>", "<cmd>:tabnext<cr>")
+vim.keymap.set("n", "<C-n>", "<cmd>:tabprevious<cr>")
 
 vim.keymap.set("n", "<C-j>", "+10");
 vim.keymap.set("n", "<C-k>", "-10");

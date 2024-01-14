@@ -121,4 +121,5 @@ return require('packer').startup(
       end,
     })
     use "folke/flash.nvim"
+    use("tiagovla/scope.nvim")
   end)
