@@ -122,4 +122,6 @@ return require('packer').startup(
     })
     use "folke/flash.nvim"
     use("tiagovla/scope.nvim")
+
+    use "github/copilot.vim"
   end)

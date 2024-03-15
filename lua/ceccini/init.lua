@@ -9,3 +9,10 @@ vim.api.nvim_exec([[
     autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} })
   augroup END
 ]], false)
+
+vim.api.nvim_exec([[
+  augroup fmt
+    autocmd!
+    autocmd BufWritePre * undojoin | Neoformat prettier
+  augroup END
+]], true)
