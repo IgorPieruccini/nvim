@@ -10,9 +10,4 @@ vim.api.nvim_exec([[
   augroup END
 ]], false)
 
-vim.api.nvim_exec([[
-  augroup fmt
-    autocmd!
-    autocmd BufWritePre * undojoin | Neoformat prettier
-  augroup END
-]], true)
+vim.api.nvim_set_keymap('n', '<leader>p', ':Neoformat prettier<CR>', { noremap = true, silent = true })
