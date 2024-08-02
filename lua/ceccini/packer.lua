@@ -76,7 +76,9 @@ return require('packer').startup(
       })
     end }
 
-    use { 'vim-test/vim-test' }
+    use { 'vim-test/vim-test', 
+      requires = {"preservim/vimux"},
+    }
 
     use {
       'numToStr/Comment.nvim',
