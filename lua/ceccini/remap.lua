@@ -6,11 +6,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "J", "mzJ`z")
 
--- jump half page thought the page
--- vim.keymap.set("n", "<C-j>", "<C-d>zz")
--- vim.keymap.set("n", "<C-k>", "<C-u>zz")
-
--- paste copped string without losing copped buffer
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
@@ -25,11 +20,8 @@ vim.keymap.set("n", "<C-x>", "<cmd>:tabclose<cr>")
 vim.keymap.set("n", "<C-m>", "<cmd>:tabnext<cr>")
 vim.keymap.set("n", "<C-n>", "<cmd>:tabprevious<cr>")
 
-vim.keymap.set("n", "<C-j>", "+10");
-vim.keymap.set("n", "<C-k>", "-10");
-
-vim.keymap.set("n", "<C-l>", "<cmd>:bprevious<cr>");
-vim.keymap.set("n", "<C-ö>", "<cmd>:bNext<cr>");
+vim.keymap.set("n", "<C-o>", "+10");
+vim.keymap.set("n", "<C-i>", "-10");
 
 vim.keymap.set("n", "<c-k>", "<cmd>:wincmd k<cr>");
 vim.keymap.set("n", "<c-j>", "<cmd>:wincmd j<cr>");
