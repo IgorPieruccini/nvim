@@ -124,4 +124,6 @@ return require('packer').startup(
     use("tiagovla/scope.nvim")
 
     use "github/copilot.vim"
+
+    use "christoomey/vim-tmux-navigator"
   end)

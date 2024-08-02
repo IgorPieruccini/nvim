@@ -30,3 +30,14 @@ vim.keymap.set("n", "<C-k>", "-10");
 
 vim.keymap.set("n", "<C-l>", "<cmd>:bprevious<cr>");
 vim.keymap.set("n", "<C-ö>", "<cmd>:bNext<cr>");
+
+vim.keymap.set("n", "<c-k>", "<cmd>:wincmd k<cr>");
+vim.keymap.set("n", "<c-j>", "<cmd>:wincmd j<cr>");
+vim.keymap.set("n", "<c-h>", "<cmd>:wincmd h<cr>");
+vim.keymap.set("n", "<c-l>", "<cmd>:wincmd l<cr>");
+
+
+vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>")
+vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>")
+vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>")
+vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>")
