@@ -76,8 +76,8 @@ return require('packer').startup(
       })
     end }
 
-    use { 'vim-test/vim-test', 
-      requires = {"preservim/vimux"},
+    use { 'vim-test/vim-test',
+      requires = { "preservim/vimux" },
     }
 
     use {
@@ -128,4 +128,9 @@ return require('packer').startup(
     use "github/copilot.vim"
 
     use "christoomey/vim-tmux-navigator"
+    -- install without yarn or npm
+    use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+    })
   end)
