@@ -36,4 +36,3 @@ local withReturn = s("s:func", fmt(
 return {
   simpleFunction = simpleFunction,
   withReturn = withReturn
-}

@@ -54,7 +54,7 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = false }),
   }),
   --- (Optional) Show source name in completion menu
-  formatting = cmp_format,
+  -- formatting = cmp_format,
 })
 
 --default keybinds documentation: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v2.x/doc/md/lsp.md#enable-format-on-save
