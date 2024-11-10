@@ -133,4 +133,9 @@ return require('packer').startup(
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
     })
+
+    use 'mfussenegger/nvim-dap'
+    use 'ravenxrz/DAPInstall.nvim'
+
+    use { "catppuccin/nvim", as = "catppuccin" }
   end)
