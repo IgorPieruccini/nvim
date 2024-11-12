@@ -23,3 +23,4 @@ vim.keymap.set('n', '<leader>fr', builtin.lsp_references)
 
 vim.keymap.set('n', '<leader>fgb', builtin.git_branches)
 vim.keymap.set('n', '<leader>fgt', builtin.git_stash)
+vim.keymap.set('n', '<leader>fm', builtin.marks, {})
