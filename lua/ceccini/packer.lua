@@ -114,7 +114,7 @@ return require('packer').startup(
         { 'MunifTanjim/nui.nvim' }
       }
     }
-
+    -- test test
     use "rebelot/kanagawa.nvim"
     use "tpope/vim-surround"
     use { 'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons' }
@@ -141,4 +141,11 @@ return require('packer').startup(
     use 'ravenxrz/DAPInstall.nvim'
 
     use { "catppuccin/nvim", as = "catppuccin" }
+    use "lukas-reineke/indent-blankline.nvim"
+    use {
+      'VonHeikemen/fine-cmdline.nvim',
+      requires = {
+        { 'MunifTanjim/nui.nvim' }
+      }
+    }
   end)

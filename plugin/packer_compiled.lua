@@ -91,7 +91,6 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["bookmarks.nvim"] = {
-    config = { "\27LJ\2\nÐ\2\0\1\b\0\20\0*6\1\0\0'\3\1\0B\1\2\0026\2\2\0009\2\3\0029\2\4\2\18\3\2\0'\5\5\0'\6\6\0009\a\a\1B\3\4\1\18\3\2\0'\5\5\0'\6\b\0009\a\t\1B\3\4\1\18\3\2\0'\5\5\0'\6\n\0009\a\v\1B\3\4\1\18\3\2\0'\5\5\0'\6\f\0009\a\r\1B\3\4\1\18\3\2\0'\5\5\0'\6\14\0009\a\15\1B\3\4\1\18\3\2\0'\5\5\0'\6\16\0009\a\17\1B\3\4\1\18\3\2\0'\5\5\0'\6\18\0009\a\19\1B\3\4\1K\0\1\0\23bookmark_clear_all\amx\18bookmark_list\aml\18bookmark_prev\amp\18bookmark_next\amn\19bookmark_clean\amc\17bookmark_ann\ami\20bookmark_toggle\amm\6n\bset\vkeymap\bvim\14bookmarks\frequire–\1\1\0\4\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0003\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\0029\0\a\0'\2\1\0B\0\2\1K\0\1\0\19load_extension\14telescope\14on_attach\0\1\0\2\tsign\bï€®\14on_attach\0\nsetup\14bookmarks\frequire\0" },
     loaded = true,
     path = "/Users/igorpieruccini/.local/share/nvim/site/pack/packer/start/bookmarks.nvim",
     url = "https://github.com/tomasky/bookmarks.nvim"
@@ -156,6 +155,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/igorpieruccini/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/igorpieruccini/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
@@ -249,7 +253,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\17open_mapping\n<c-t>\17hide_numbers\2\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\17hide_numbers\2\17open_mapping\n<c-t>\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/Users/igorpieruccini/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -308,18 +312,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: bookmarks.nvim
-time([[Config for bookmarks.nvim]], true)
-try_loadstring("\27LJ\2\nÐ\2\0\1\b\0\20\0*6\1\0\0'\3\1\0B\1\2\0026\2\2\0009\2\3\0029\2\4\2\18\3\2\0'\5\5\0'\6\6\0009\a\a\1B\3\4\1\18\3\2\0'\5\5\0'\6\b\0009\a\t\1B\3\4\1\18\3\2\0'\5\5\0'\6\n\0009\a\v\1B\3\4\1\18\3\2\0'\5\5\0'\6\f\0009\a\r\1B\3\4\1\18\3\2\0'\5\5\0'\6\14\0009\a\15\1B\3\4\1\18\3\2\0'\5\5\0'\6\16\0009\a\17\1B\3\4\1\18\3\2\0'\5\5\0'\6\18\0009\a\19\1B\3\4\1K\0\1\0\23bookmark_clear_all\amx\18bookmark_list\aml\18bookmark_prev\amp\18bookmark_next\amn\19bookmark_clean\amc\17bookmark_ann\ami\20bookmark_toggle\amm\6n\bset\vkeymap\bvim\14bookmarks\frequire–\1\1\0\4\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0003\3\4\0=\3\5\2B\0\2\0016\0\0\0'\2\6\0B\0\2\0029\0\a\0'\2\1\0B\0\2\1K\0\1\0\19load_extension\14telescope\14on_attach\0\1\0\2\tsign\bï€®\14on_attach\0\nsetup\14bookmarks\frequire\0", "config", "bookmarks.nvim")
-time([[Config for bookmarks.nvim]], false)
--- Config for: github-nvim-theme
-time([[Config for github-nvim-theme]], true)
-try_loadstring("\27LJ\2\nn\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
-time([[Config for github-nvim-theme]], false)
 -- Config for: treesj
 time([[Config for treesj]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vtreesj\frequire\0", "config", "treesj")
 time([[Config for treesj]], false)
+-- Config for: github-nvim-theme
+time([[Config for github-nvim-theme]], true)
+try_loadstring("\27LJ\2\nn\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+time([[Config for github-nvim-theme]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\17hide_numbers\2\17open_mapping\n<c-t>\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -328,10 +332,6 @@ time([[Config for Comment.nvim]], false)
 time([[Config for lualine.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\17open_mapping\n<c-t>\17hide_numbers\2\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

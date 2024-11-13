@@ -5,7 +5,7 @@ require('telescope').setup {
     layout_config = {
       width = 0.75                 -- Adjust width to control truncation as needed
     },
-    live_grep = { "basename" }
+    live_grep = { "truncate" }
   }
 }
 
