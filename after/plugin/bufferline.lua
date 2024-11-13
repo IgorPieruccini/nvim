@@ -17,3 +17,4 @@ require("bufferline").setup {
 
 vim.keymap.set("n", "<leader>bl", '<cmd>BufferLinePick<CR>')
 vim.keymap.set("n", "<leader>bc", '<cmd>BufferLinePickClose<CR>')
+vim.keymap.set("n", "<leader>ba", '<cmd>BufferLineCloseOthers<CR>')
