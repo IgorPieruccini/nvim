@@ -6,6 +6,7 @@ require('telescope').setup {
       width = 0.75                 -- Adjust width to control truncation as needed
     },
     live_grep = { "truncate" }
+
   }
 }
 
@@ -14,8 +15,10 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
 vim.keymap.set('n', '<leader>fsd', builtin.live_grep, { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fsr', builtin.resume, {})
 vim.keymap.set('n', '<leader>gd', builtin.lsp_implementations, {})
+vim.keymap.set('n', '<leader>gtd', '<cmd>Telescope lsp_type_definitions<cr>', {})
+vim.keymap.set('n', '<leader>fcb', '<cmd>Telescope current_buffer_fuzzy_find<cr>', {})
+
 
 vim.keymap.set('n', '<leader>fd', '<cmd>Telescope diagnostics<CR>')
 vim.keymap.set('n', '<leader>fwd', builtin.lsp_document_symbols)

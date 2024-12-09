@@ -108,12 +108,6 @@ return require('packer').startup(
     use "kristijanhusak/vim-dadbod-ui"
     use "kristijanhusak/vim-dadbod-completion"
 
-    use {
-      'VonHeikemen/fine-cmdline.nvim',
-      requires = {
-        { 'MunifTanjim/nui.nvim' }
-      }
-    }
     -- test test
     use "rebelot/kanagawa.nvim"
     use "tpope/vim-surround"
@@ -142,10 +136,4 @@ return require('packer').startup(
 
     use { "catppuccin/nvim", as = "catppuccin" }
     use "lukas-reineke/indent-blankline.nvim"
-    use {
-      'VonHeikemen/fine-cmdline.nvim',
-      requires = {
-        { 'MunifTanjim/nui.nvim' }
-      }
-    }
   end)
