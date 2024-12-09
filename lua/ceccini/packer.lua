@@ -136,4 +136,5 @@ return require('packer').startup(
 
     use { "catppuccin/nvim", as = "catppuccin" }
     use "lukas-reineke/indent-blankline.nvim"
+    use { "lewis6991/gitsigns.nvim", config = function() require('gitsigns').setup() end }
   end)
